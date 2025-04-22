@@ -46,12 +46,6 @@ const MoodSelector = ({ onMoodSelect, initialMood }) => {
           </button>
         ))}
       </div>
-      
-      {selectedMood && (
-        <p className="text-sm md:text-base mt-2 md:mt-3 text-gray-600">
-          You selected: {moods.find(m => m.id === selectedMood)?.label}
-        </p>
-      )}
     </div>
   );
 };

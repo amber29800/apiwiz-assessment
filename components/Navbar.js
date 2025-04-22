@@ -15,11 +15,11 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <>
-      <h1 className="text-2xl md:text-4xl font-bold text-center text-gray-800 mb-2">
-        Mood Journal
+    <nav className="flex items-center justify-between gap-3 flex-1">
+      <h1 className="text-2xl md:text-4xl font-bold text-center text-gray-800">
+        MoodScape
       </h1>
-      <h2 className="text-lg md:text-2xl text-center text-gray-700 mb-6">{currentDate}</h2>
-    </>
+      <h2 className="text-base text-center text-gray-700">{currentDate}</h2>
+    </nav>
   );
 };
